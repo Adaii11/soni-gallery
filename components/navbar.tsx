@@ -7,8 +7,8 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="w-full h-auto fixed top-0 left-0 bg-linear-to-r from-(--primary) to-(--primary-2)">
-                <div className="w-full max-w-[62.5rem] left-0 right-0 mx-auto flex flex-row items-center place-content-between py-[0.5rem] px-[1rem]">
+            <nav className="w-full h-auto fixed top-0 left-0 bg-linear-to-r from-(--primary) to-(--primary-2) z-1000">
+                <div className="w-full max-w-[75rem] left-0 right-0 mx-auto flex flex-row items-center place-content-between py-[0.5rem] px-[2rem]">
                     <div className="flex flex-row gap-2">
                         <img
                             className="rounded border"
@@ -21,7 +21,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="font-sans hidden lg:flex flex-row items-center space-evenly text-[1.875rem] font-light gap-[2rem] pt-[0.5rem]">
-                        <Link className="hover:font-normal" href="/dashboard/main">Home</Link>
+                        <Link className="hover:font-normal" href="/">Home</Link>
                         <Link className="hover:font-normal" href="/dashboard/main/nutrition">Store</Link>
                         <Link className="hover:font-normal" href="/dashboard/main/workout">Gallery</Link>
                         <Link className="hover:font-normal" href="/dashboard/main/workout">About Us</Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
                         font-sans font-light lg:hidden w-full bg-black text-white px-4 py-2
                         flex flex-col gap-4 items-center text-[1.75rem]
                         overflow-hidden transition-all duration-300 fixed left-0
-                        ${menuOpen ? "max-h-96 opacity-100 top-[4.5rem]" : "max-h-0 opacity-0 top-[4.5rem]"}
+                        ${menuOpen ? "max-h-96 opacity-100 top-[4rem]" : "max-h-0 opacity-0 top-[4.5rem]"}
                         z-40
                     `}
                 >
