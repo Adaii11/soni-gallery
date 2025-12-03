@@ -3,7 +3,7 @@ import {useState} from 'react';
 
 export default function Footer() {
     return (
-        <div className="w-full bg-black text-(--background) flex flex-col font-sans border-t border-(--secondary)">        
+        <div className="w-full bg-black text-(--background) flex flex-col font-sans border-t-2 border-(--secondary)">        
             <div className="w-full max-w-[75rem] left-0 right-0 mx-auto h-auto flex flex-col md:flex-row md:gap-[1rem]"> 
                 <div className="flex-1 flex-col py-[2.25rem]">
                     <div className="flex flex-row gap-[1rem] items-center justify-center">
@@ -83,12 +83,12 @@ export default function Footer() {
                         <h1 className="font-bold text-[1.75rem] pt-[0.25rem] pr-[0.5rem] leading-none">Quick Links</h1>
                     </div>
                     <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary)" href="/">Home</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/nutrition">Store</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/workout">Gallery</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/workout">About Us</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/workout">Contact</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/workout">FAQ</Link>
-                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/dashboard/main/workout">Returns</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/store">Store</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/gallery">Gallery</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/about-us">About Us</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/contact">Contact</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/">FAQ</Link>
+                    <Link className="text-center text-[1.375rem] font-light hover:font-normal hover:text-(--primary) " href="/">Returns</Link>
                     <h1 className="font-bold text-[1.75rem] text-center mt-[2rem]">Social</h1>
                     <div className="flex flex-row justify-center gap-[1rem] mt-[0.5rem]">
                         <a href="https://maps.google.com/?q=7454+S+Olympia+Ave,+Tulsa,+OK+74132">

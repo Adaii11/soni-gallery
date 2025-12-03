@@ -7,8 +7,8 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="w-full h-auto fixed top-0 left-0 bg-linear-to-r from-(--primary) to-(--primary-2) z-1000">
-                <div className="w-full max-w-[75rem] left-0 right-0 mx-auto flex flex-row items-center place-content-between py-[0.5rem] px-[2rem]">
+            <nav className="w-full h-auto fixed top-0 left-0 bg-linear-to-r from-(--primary) to-(--primary-2) z-1000 border-b-2">
+                <div className="w-full max-w-[75rem] left-0 right-0 mx-auto flex flex-row items-center place-content-between py-[0.5rem] px-[1rem]">
                     <div className="flex flex-row gap-2">
                         <img
                             className="rounded border"
@@ -22,10 +22,10 @@ export default function Navbar() {
 
                     <div className="font-sans hidden lg:flex flex-row items-center space-evenly text-[1.875rem] font-light gap-[2rem] pt-[0.5rem]">
                         <Link className="hover:font-normal" href="/">Home</Link>
-                        <Link className="hover:font-normal" href="/dashboard/main/nutrition">Store</Link>
-                        <Link className="hover:font-normal" href="/dashboard/main/workout">Gallery</Link>
-                        <Link className="hover:font-normal" href="/dashboard/main/workout">About Us</Link>
-                        <Link className="hover:font-normal" href="/dashboard/main/workout">Contact</Link>
+                        <Link className="hover:font-normal" href="/store">Store</Link>
+                        <Link className="hover:font-normal" href="/gallery">Gallery</Link>
+                        <Link className="hover:font-normal" href="/about-us">About Us</Link>
+                        <Link className="hover:font-normal" href="/contact">Contact</Link>
                     </div>
 
                     <div className="lg:hidden">
@@ -44,12 +44,11 @@ export default function Navbar() {
                         z-40
                     `}
                 >
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main" className="hover:text-(--primary)">Home</Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main/nutrition" className="hover:text-(--primary)">Store</Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main/workout" className="hover:text-(--primary)">Gallery</Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main/account-settings" className="hover:text-(--primary)">About Us</Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main/account-settings" className="hover:text-(--primary)">Contact</Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/dashboard/main/account-settings" className="hover:text-(--primary)">Social</Link>
+                    <Link onClick={() => setMenuOpen(false)} href="/" className="hover:text-(--primary)">Home</Link>
+                    <Link onClick={() => setMenuOpen(false)} href="/store" className="hover:text-(--primary)">Store</Link>
+                    <Link onClick={() => setMenuOpen(false)} href="/gallery" className="hover:text-(--primary)">Gallery</Link>
+                    <Link onClick={() => setMenuOpen(false)} href="/about-us" className="hover:text-(--primary)">About Us</Link>
+                    <Link onClick={() => setMenuOpen(false)} href="/contact" className="hover:text-(--primary)">Contact</Link>
                 </div>
             </>
     )

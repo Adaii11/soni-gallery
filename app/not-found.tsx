@@ -10,7 +10,7 @@ export default function NotFound() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute flex flex-col">
             <h1 className="font-bold text-[2.225rem] text-center">404</h1>
-            <h2 className="font-light text-[1.875rem] text-center">Page Not Fount</h2>
+            <h2 className="font-light text-[1.875rem] text-center">Page Not Found</h2>
             <div className="flex justify-center py-[1rem]">
                 <Link className="border border-black text-[1.125rem] font-light px-[1rem] py-[0.5rem] rounded-full bg-linear-to-r from-(--secondary) to-(--secondary-2) hover:border hover:font-normal hover:border-white" href="/">Home</Link>
             </div>
